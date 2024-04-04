@@ -27,9 +27,7 @@ def recHelper(start, s):
             return False
         return recHelper(start+1, s) 
 
-
-
-def isPalindrome(s):
+def isPalindromeEd(s):
         s = s.lower()
         s = ''.join(e for e in s if e.isalnum())
         if(len(s)<1):
@@ -38,4 +36,4 @@ def isPalindrome(s):
         return recHelper(0, s)
 
 
-print(isPalindrome("abcd"))
+print(isPalindromeEd("A man, a plan, a canal: Panama"))
