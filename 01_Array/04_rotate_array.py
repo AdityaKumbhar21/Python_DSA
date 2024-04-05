@@ -42,6 +42,13 @@ def rotate_arr_opt(arr, n, k):
 
 
 
+# to right rotate array:
+
+     # reverse_arr(arr,0,n-1)
+     # reverse_arr(arr,0,k-1)
+     # reverse_arr(arr,k,n-1)
+
+
 
 
 arr = [1, 3, 6, 11, 12, 17]
