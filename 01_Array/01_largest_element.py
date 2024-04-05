@@ -10,7 +10,7 @@ def largest_element(arr):
 
 def largest_element_optimal(arr):
     n = len(arr)
-    largest = arr[0]
+    largest = int(-1e9)
     for i in range(1,n):
         if(arr[i] > largest):
             largest = arr[i]
