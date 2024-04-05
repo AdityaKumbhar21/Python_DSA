@@ -29,6 +29,7 @@ def reverse_arr(arr,start_ind, end_ind):
           end_ind -= 1
 
 def rotate_arr_opt(arr, n, k): 
+     k = k%n
      if k == n:
           return arr
 
