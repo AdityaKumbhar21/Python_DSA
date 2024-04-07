@@ -17,6 +17,21 @@ def rotate_arr_brute(arr, n, k):
           arr[i] = temp_arr[i - (n-k)]
      return arr
 
+def rotate_arr_brute_right(arr, n, k):
+     if k == n:
+         return arr
+     temp_arr = []
+     for i in range(n-k,n):
+          temp_arr.append(arr[i])
+   
+     for i in range(n - 1, k - 1, -1): 
+        arr[i] = arr[i - k]
+    
+     
+     for i in range(k):
+          arr[i] = temp_arr[i]
+     return arr
+
 
 
 # Optimal solution:
@@ -54,4 +69,5 @@ def rotate_arr_opt(arr, n, k):
 
 arr = [1, 3, 6, 11, 12, 17]
 print(rotate_arr_brute(arr, len(arr), 4))
+print(rotate_arr_brute_right(arr, len(arr), 4))
 print(rotate_arr_opt(arr,6,4))
