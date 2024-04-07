@@ -1,10 +1,5 @@
 from typing import *
 
-def swap(a,b):
-    temp = a
-    a = b
-    b = temp
-
 # ans = []
 # def reverseArray(n:int, nums: List[int],ind):
 #     if ind < 0:
