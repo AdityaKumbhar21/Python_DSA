@@ -20,7 +20,7 @@ def productExceptSelf(nums):
             else:
                 ans.append(prod // num)
         else:
-            ans.append(prod)
+            ans.append(prod)  # for adding the total product at the place of zero in the array
     
     return ans
 
