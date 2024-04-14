@@ -8,7 +8,7 @@ def isValidSudoku(board):
 
         for r in range(9):
             for c in range(9):
-                if(board[r][c] == "."):   # for checkinh empty values if there are then continue
+                if(board[r][c] == "."):   # for checking empty values if there are then continue
                     continue
                 # checking for duplicate value if any
                 if (board[r][c] in rows[r] or
