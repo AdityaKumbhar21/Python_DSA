@@ -39,10 +39,14 @@ stack_1.push(301)
 
 print(stack_1.is_empty())  #will return true if stack is empty else false
 
-print(stack_1.peek())  #will print the top element of the stack
+print("Size of the stack: ",stack_1.size())
 
-print(stack_1.pop())  # will remove the top element and return it
-print(stack_1.peek())  #will print the top element of the stack
+print("Top element: ",stack_1.peek())  #will print the top element of the stack
+
+print("Popped element: ",stack_1.pop())  # will remove the top element and return it
+print("Top element: ",stack_1.peek())  #will print the top element of the stack
+
+print("Size of the stack: ",stack_1.size())
 
 
 
